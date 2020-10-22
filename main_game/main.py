@@ -1,4 +1,5 @@
 import trisse_choices
+import gustavo_choises
 import creditos
 
 input('Pressione enter para continuar ')
@@ -18,12 +19,14 @@ elif idade >= 15:
     print('\nREGRAS DO JOGO: \n§ As respostas devem sempre ser apenas com o número da escolha, após a escolha apenas aperte ENTER.\n§Infelizmente você só pode escolher uma vez, afinal estamos tratando de uma vida aqui, então escolha sabiamente! \n§Alguns caminhos serão curtos e outros serão longos para saber todos eles, é só voltar a jogar. \n§ Se divirta!\n')
     print('-' * 20)
 
-    personagem = input('Agora nos diga quem você quer ser?\n\nTrinity{1} ou Jesse{2}: ')
+    personagem = input('Agora nos diga quem você quer ser?\n\nTrinity{1} ,Jesse{2} ou Gustavo{3}: ')
     
     if personagem == '1':
         trisse_choices()
 
     elif personagem == '2':
         print('\n--- ESTE PERSONAGEM SÓ ESTARÁ DISPONÍVEL A PARTIR DE 10/06/2020, POR FAVOR AGUARDE ATÉ O LANÇAMENTO --- \n')
-			
+	
+    elif personagem == '3':
+          gustavo_choises()
     credits()
